@@ -1,0 +1,42 @@
+{
+  "name": "pgdiff",
+  "version": "0.0.0",
+  "author": "Yashu Mittal @mittalyashu",
+  "bin": {
+    "pgdiff": "./bin/run"
+  },
+  "bugs": "https://github.com/mittalyashu/pgdiff/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^3"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1"
+  },
+  "engines": {
+    "node": ">=12.20.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/mittalyashu/pgdiff",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "pgdiff"
+  },
+  "repository": "https://github.com/mittalyashu/pgdiff",
+  "scripts": {
+    "posttest": "eslint .",
+    "prepack": "oclif-dev readme",
+    "test": "echo NO TESTS",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}
